@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner sc = new Scanner(System.in);
+	    int T = sc.nextInt();
+	    while(T-- > 0)
+	    {
+	        double[] K = new double[3];
+	        K[0] = sc.nextDouble();
+	        K[1] = sc.nextDouble();
+	        K[2] = sc.nextDouble();
+	        double V = sc.nextDouble();
+	        double var = 100.00 / (K[0] * K[1] * K[2] * V);
+	        if(var >= 9.575)
+	            System.out.println("NO");
+	        else
+	            System.out.println("YES");
+	    }
+	    sc.close();
+	}
+}
